@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Module 2 - Digital Citizenship Assessment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "BalooBhaijaan", sans-serif;
+        background-color: #6ec9f2;
+        display: flex;
+        flex-direction: column;
+        color: #333;
+        min-height: 100vh;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #6ec9f2;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        font-weight: 700;
+        font-size: 4rem;
+        color: #1b1b1b;
+        padding-left: 30px;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      nav a {
+        margin-left: 1.8rem;
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+
+      .content-box {
+        border-radius: 30px;
+        padding: 40px;
+        max-width: 900px;
+        margin: 40px auto;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background-color: #6ec9f2;
+      }
+
+      .baloo-font {
+        font-family: "Baloo Bhaijaan", cursive;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: black;
+      }
+
+      .nav-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 40px;
+      }
+
+      .circle-btn {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s;
+      }
+
+      .circle-btn:hover {
+        background-color: #45a049;
+        padding-bottom: 10px;
+      }
+
+      .video-box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        background-color: #fff;
+        border-radius: 25px;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px 100px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+        flex-wrap: wrap;
+      }
+
+      .video-text {
+        font-family: "Baloo Bhaijaan", cursive;
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .youtube-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 560px;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+      }
+
+      .youtube-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .think-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin: 50px auto;
+        max-width: 800px;
+        text-align: center;
+      }
+
+      .think-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        animation: fadeInUp 1s ease-in-out;
+      }
+
+      .think-question {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+
+      .think-letter {
+        font-family: "Baloo Bhaijaan", cursive;
+        font-size: 48px;
+        font-weight: bold;
+        background-color: #4caf50;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        user-select: none;
+        transition: transform 0.3s;
+      }
+
+      .think-letter:hover {
+        transform: scale(1.2);
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #000;
+        margin-top: auto;
+      }
+
+      @media (max-width: 768px) {
+        .video-box {
+          flex-direction: column;
+          text-align: center;
+          padding: 20px;
+        }
+
+        .think-container {
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🤖</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="module1.html">Module</a>
+        <a href="assessment.html">Assessment</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <div class="content-box">
+      <h1 class="baloo-font">What Is Online Behavior ?</h1>
+      <p>
+        Just like in real life , how you act online matters. Being polite ,
+        respectful , and responsible is key !
+      </p>
+
+      <div
+        style="
+          background-color: #fff;
+          border-radius: 20px;
+          padding: 30px;
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          max-width: 700px;
+          margin: 20px auto;
+          text-align: center;
+          color: #333;
+        "
+      >
+        <h1 class="baloo-font" style="color: black">💬 Real-Life vs Online</h1>
+        <p style="font-size: 22px; font-weight: bold; color: #222">
+          Would you <span style="color: red">shout</span> in someone's face in
+          real life ? 😡
+        </p>
+        <p
+          style="font-size: 20px; font-weight: bold; color: red; margin: 10px 0"
+        >
+          No ? Of course not !
+        </p>
+        <p style="font-size: 19px; color: #222">
+          Then don’t do it in the <strong>comments section</strong> either !
+          💻💬<br />
+          Always choose kindness — online and offline. 🤝✨
+        </p>
+        <img
+          src="kids shouting.jpg"
+          alt="Kids shouting illustration"
+          style="
+            max-width: 140px;
+            margin-top: 10px;
+            border-radius: 12px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+          "
+        />
+      </div>
+    </div>
+
+    <!-- THINK Section -->
+    <div class="think-container">
+      <div class="think-item">
+        <div class="think-question">Is this True?</div>
+        <div class="think-letter">T</div>
+      </div>
+      <div class="think-item">
+        <div class="think-question">Is it Helpful?</div>
+        <div class="think-letter">H</div>
+      </div>
+      <div class="think-item">
+        <div class="think-question">Is it Inspiring?</div>
+        <div class="think-letter">I</div>
+      </div>
+      <div class="think-item">
+        <div class="think-question">Is it Necessary?</div>
+        <div class="think-letter">N</div>
+      </div>
+      <div class="think-item">
+        <div class="think-question">Is it Kind?</div>
+        <div class="think-letter">K</div>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-box">
+      <div class="logo">🤖</div>
+      <div>
+        <div class="video-text">Watch DOs & DON’Ts<br />Online Behavior</div>
+        <div class="youtube-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/7UckVzq4FuU?si=yy5OskDSfXYiYELD"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <button class="circle-btn" onclick="window.location.href='module1.html'">
+        &lt;
+      </button>
+      <button class="circle-btn" onclick="window.location.href='module3.html'">
+        &gt;
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>Copyright © 2025 Digital Edu. All Rights Reserved.</footer>
+  </body>
+</html>

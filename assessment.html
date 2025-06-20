@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "BalooBhaijaan";
+        src: url("fonts/BalooBhaijaan-Regular.ttf") format("truetype");
+        font-weight: 100;
+        font-style: normal;
+      }
+      body {
+        font-family: "BalooBhaijaan", sans-serif;
+        margin: 0;
+        background-color: #6ec9f2;
+        color: #333;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #6ec9f2;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        font-weight: 700;
+        font-size: 4rem;
+        color: #1b1b1b;
+        padding-left: 30px;
+      }
+      nav a {
+        margin-left: 1.5rem;
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+      .header-section {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: #6ec9f2;
+        padding: 1rem;
+        border-radius: 20px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .modules {
+        flex: 1;
+      }
+      .modules a {
+        display: block;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        color: #fff;
+        text-align: center;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.5rem;
+        box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.15);
+      }
+      .modules a:nth-child(1) {
+        background: linear-gradient(90deg, #00d084, #6ee7b7);
+      }
+      .modules a:nth-child(2) {
+        background: linear-gradient(90deg, #f59e0b, #fdba74);
+      }
+      .modules a:nth-child(3) {
+        background: linear-gradient(90deg, #f43f5e, #fb7185);
+      }
+      .modules a:nth-child(4) {
+        background: linear-gradient(90deg, #2563eb, #60a5fa); /* Biru */
+      }
+      .modules a:nth-child(5) {
+        background: linear-gradient(90deg, #8b5cf6, #6d28d9); /* Ungu */
+      }
+
+      .instructions {
+        flex: 1;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .thought {
+        display: flex;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 30px;
+        min-width: 40px;
+        max-width: 500px;
+        min-height: 150px;
+        margin: 20px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+      }
+      .thought:before,
+      .thought:after {
+        content: "";
+        background-color: #fff;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+      }
+      .thought:before {
+        width: 44px;
+        height: 44px;
+        top: -12px;
+        left: 28px;
+        box-shadow: -50px 30px 0 -12px #fff;
+      }
+      .thought:after {
+        bottom: -10px;
+        right: 26px;
+        width: 30px;
+        height: 30px;
+        box-shadow: 40px -34px 0 0 #fff, -28px -6px 0 -2px #fff,
+          -24px 17px 0 -6px #fff, -5px 25px 0 -10px #fff, -50px 30px 0 -6px #fff,
+          -18px 50px 0 -10px #fff;
+      }
+      .bottom-logo {
+        margin-top: 1rem;
+        font-weight: 60px;
+        font-size: 120px;
+        padding-left: 200px;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🤖</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="module1.html">Module</a>
+        <a href="assessment.html">Assessment</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <div class="header-section">🧩 Ready to test what you've learned ?</div>
+
+    <div class="content">
+      <div class="modules">
+        <a href="https://wordwall.net/resource/93712487" target="_blank">
+          Module 1 – Digital Citizen ( Wordwall )</a
+        >
+        <a
+          href="https://kahoot.it/challenge/0315551?challenge-id=151b88ca-3440-4e56-bd23-d1e691652350_1749102862710"
+          target="_blank"
+        >
+          Module 2 – Info Protection ( Kahoot )</a
+        >
+        <a href="https://wordwall.net/resource/92741199" target="_blank">
+          Module 2 – Info Protection ( Wordwall )</a
+        >
+        <a href="https://learningapps.org/watch?v=p2kpubnh525" target="_blank">
+          Module 3 – Cyberbullying ( Learning Apps )</a
+        >
+        <a href="https://wordwall.net/resource/93291781" target="_blank">
+          Module 3 – Cyberbullying ( Wordwall )</a
+        >
+      </div>
+      <div class="instructions">
+        <div class="thought">
+          <ul>
+            <li>Choose an assessment based on the module you've completed.</li>
+            <li>Click the button to start. The quiz will open in a new tab.</li>
+            <li>Come back here to continue to the next one !</li>
+            <li>
+              In each module ( Wordwall ), a "Switch Template" feature is
+              provided to allow users to try all types of templates provided.
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-logo">🤖</div>
+      </div>
+    </div>
+
+    <footer>Copyright © 2025 Digital Edu. All Rights Reserved.</footer>
+  </body>
+</html>

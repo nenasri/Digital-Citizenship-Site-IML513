@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Module 1 - Digital Citizenship Assessment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "BalooBhaijaan";
+        src: url("fonts/BalooBhaijaan-Regular.ttf") format("truetype");
+      }
+      body {
+        font-family: "BalooBhaijaan", sans-serif;
+        margin: 0;
+        background-color: #6ec9f2;
+        color: #333;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #6ec9f2;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        font-weight: 700;
+        font-size: 4rem;
+        color: #1b1b1b;
+        padding-left: 30px;
+      }
+
+      nav a {
+        margin-left: 1.5rem;
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+
+      .content-box {
+        background-color: #6ec9f2;
+        border-radius: 30px;
+        padding: 40px;
+        max-width: 900px;
+        margin: 40px auto;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .content-box h1 {
+        color: white;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      .content-box p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      .module-box {
+        border: 3px solid black;
+        border-radius: 15px;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 3px 3px 0 black;
+        color: #000;
+      }
+
+      .module1 {
+        background: linear-gradient(90deg, #00d084, #6ee7b7);
+      }
+
+      .module2 {
+        background: linear-gradient(90deg, #f59e0b, #fdba74);
+      }
+
+      .module3 {
+        background: linear-gradient(90deg, #f43f5e, #fb7185);
+      }
+
+      .nav-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .circle-btn {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s;
+      }
+
+      .circle-btn:hover {
+        background-color: #45a049;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">🤖</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="module1.html">Module</a>
+        <a href="assessment.html">Assessment</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <div class="content-box">
+      <h1>What is Digital Citizenship ?</h1>
+      <p>
+        <b
+          >Digital citizenship means being a responsible and respectful user of
+          technology. Just like in real life, we have to follow rules online
+          !</b
+        >
+      </p>
+
+      <h1>Why Important ?</h1>
+      <p>
+        <b
+          >Because everything you do online — from posting a comment to sharing
+          a picture — leaves a mark.</b
+        >
+      </p>
+
+      <div class="module-box module1">✅ Keep you safe</div>
+      <div class="module-box module2">✅ Protect others</div>
+      <div class="module-box module3">
+        ✅ Make the internet a better place for everyone
+      </div>
+
+      <div class="nav-buttons">
+        <button
+          class="circle-btn"
+          onclick="window.location.href='module1.html'"
+        >
+          &lt;
+        </button>
+        <button
+          class="circle-btn"
+          onclick="window.location.href='module2.html'"
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+
+    <footer>Copyright © 2025 Digital Edu. All Rights Reserved.</footer>
+  </body>
+</html>
